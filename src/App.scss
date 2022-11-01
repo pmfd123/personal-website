@@ -1,0 +1,33 @@
+@use 'styling/navbar';
+@use 'styling/headline';
+@use 'styling/profile';
+@use 'styling/skills';
+@use 'styling/footer';
+@use 'styling/resume';
+
+html {
+  /* For Firefox */
+  overflow-y: scroll;
+  scrollbar-color: #008b8b77 transparent;
+  scrollbar-width: thin;
+}
+
+/* For Chrome and other browsers except Firefox */
+body::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #008b8b77;
+    border-radius: 14px;
+}
+
+body {
+  position: relative;
+  font-family: Verdana, sans-serif;
+  background: #0d1722f5
+}
+
+.main {
+  padding-bottom: 64px;
+}

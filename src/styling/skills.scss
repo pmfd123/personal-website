@@ -1,0 +1,30 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.skills-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+    margin: 16px 0;
+    width: 50%;
+    border-radius: 12px;
+    background: #051326;
+    color: #008B8B;
+}
+
+.skills-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills-image {
+    max-width: 60px;
+    min-width: 40px;
+    height: 60px;
+    overflow: hidden;
+}

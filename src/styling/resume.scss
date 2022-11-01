@@ -1,0 +1,39 @@
+@keyframes slideinResume {
+    from {
+        margin-inline-start: 99%;
+    }
+  
+    to {
+        margin-inline-start: calc(25% - 32px);
+    }
+  }
+
+.resume {
+    width: 100%;
+    overflow: hidden;
+}
+
+.resume-container {
+    position: relative;
+    padding: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-inline-start: calc(25% - 32px);
+    width: 50%;
+    border-radius: 12px;
+    background: #051326;
+    color: #008B8B;
+    animation-duration: 3s;
+    animation-name: slideinResume;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 140%;
+    }
+}
+
+.resume-title {
+    margin-top: 0;
+    text-align: center;
+}
