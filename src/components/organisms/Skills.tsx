@@ -24,10 +24,10 @@ const SkillsCard: React.FC<SkillsCardProps> = ({ title }) => {
         );
     }
   }, [title]);
-  console.log(skills);
+
   return (
     <div className='skills-card'>
-      <h3>{title}</h3>
+      <h3 className='skills-card-title'>{title}</h3>
       <div className='skills-card-container'>
         {skills.map((imgSrc, index) => {
           const alt = imgSrc.split('/').at(-1)?.split('.')[0];

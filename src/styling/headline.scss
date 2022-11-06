@@ -1,20 +1,45 @@
-.headline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 0;
-    margin: 8px;
-    border-radius: 16px;
-    background: #051326;
-
-    .title {
-        margin-bottom: 8px;
-        color: #008B8B;
-    }
-
-    .subtitle {
-        margin-top: 0;
-        color: #e6bd2f,
-    }
+@keyframes glow-headline {
+  from {
+    filter: invert(73%) sepia(100%) saturate(358%) hue-rotate(119deg)
+      brightness(82%) contrast(90%) drop-shadow(0 0 1px #008b8b);
+  }
+  to {
+    filter: invert(73%) sepia(100%) saturate(358%) hue-rotate(119deg)
+      brightness(82%) contrast(90%) drop-shadow(0 0 7px #008b8b);
+  }
 }
 
+@keyframes glow-box-headline {
+  from {
+    box-shadow: 0 0 7px 0px #008b8b;
+  }
+  to {
+    box-shadow: 0 0 7px 7px #008b8b;
+  }
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  background: #051326;
+  animation: glow-box-headline 2s ease-in-out infinite alternate;
+
+  &-title {
+    width: 25%;
+    animation: glow-headline 2s ease-in-out infinite alternate;
+    filter: invert(34%) sepia(20%) saturate(6387%) hue-rotate(157deg)
+      brightness(91%) contrast(101%);
+  }
+}
+
+@media (max-width: 1000px) {
+  .headline {
+    padding: 16px 0;
+
+    &-title {
+      width: 50%;
+    }
+  }
+}

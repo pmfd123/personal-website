@@ -1,24 +1,31 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+  const logo = require('../../assets/logo.png');
+
   return (
-    <ul className='navbar'>
-      <li>
-        <Link className='navbar-link' to='/'>
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link className='navbar-link' to='/resume'>
-          Resume
-        </Link>
-      </li>
-      <li>
-        <Link className='navbar-link' to='/contact'>
-          Contact
-        </Link>
-      </li>
-    </ul>
+    <div className='navbar'>
+      <NavLink className='navbar-logo-container' to='/'>
+        <img className='navbar-logo' src={logo} alt='logo-navbar' />
+      </NavLink>
+      <ul className='navbar-list'>
+        <li>
+          <NavLink className='navbar-link' to='/' end>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className='navbar-link' to='/resume'>
+            Resume
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={'navbar-link'} to='/contact'>
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+    </div>
   );
 };
 

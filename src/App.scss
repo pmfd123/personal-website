@@ -2,30 +2,34 @@
 @use 'styling/headline';
 @use 'styling/profile';
 @use 'styling/skills';
+@use 'styling/contact';
 @use 'styling/footer';
 @use 'styling/resume';
 
 html {
+  height: 100%;
+  box-sizing: border-box;
   /* For Firefox */
-  overflow-y: scroll;
-  scrollbar-color: #008b8b77 transparent;
+  overflow-y: auto;
+  scrollbar-color: #008b8b77 #008b8b21;
   scrollbar-width: thin;
-}
-
-/* For Chrome and other browsers except Firefox */
-body::-webkit-scrollbar {
-    width: 0.5em;
-    background-color: transparent;
-}
-body::-webkit-scrollbar-thumb {
-    background-color: #008b8b77;
-    border-radius: 14px;
 }
 
 body {
   position: relative;
-  font-family: Verdana, sans-serif;
-  background: #0d1722f5
+  min-height: 100%;
+  font-family: 'MuseoModerno', Verdana, sans-serif;
+  background: #0d1722f5;
+
+  /* For Chrome and other browsers except Firefox */
+  &::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: #008b8b21;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #008b8b77;
+    border-radius: 14px;
+  }
 }
 
 .main {
