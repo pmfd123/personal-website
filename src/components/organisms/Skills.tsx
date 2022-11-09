@@ -26,10 +26,7 @@ const SkillsCard: React.FC<SkillsCardProps> = ({ title }) => {
       <h3 className='skills-card-title'>{title}</h3>
       <div className='skills-card-container'>
         {skills.map((imgSrc, index) => {
-          const alt = imgSrc.split('/').at(-1)?.split('.')[0];
-          return (
-            <img className='skills-image' src={imgSrc} key={index} alt={alt} />
-          );
+          return <img className='skills-image' src={imgSrc} key={index} />;
         })}
       </div>
     </div>
