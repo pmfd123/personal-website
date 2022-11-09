@@ -12,16 +12,12 @@ const SkillsCard: React.FC<SkillsCardProps> = ({ title }) => {
     switch (title) {
       case 'Frontend':
         return importAll(
-          require.context('../../assets/skills/frontend', false, /(\w)*\.(png)/)
+          require.context('../../assets/skills/frontend', false)
         );
       case 'Backend':
-        return importAll(
-          require.context('../../assets/skills/backend', false, /(\w)*\.(png)/)
-        );
+        return importAll(require.context('../../assets/skills/backend', false));
       case 'Other Tech':
-        return importAll(
-          require.context('../../assets/skills/other', false, /(\w)*\.(png)/)
-        );
+        return importAll(require.context('../../assets/skills/other', false));
     }
   }, [title]);
 
