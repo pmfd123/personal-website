@@ -15,8 +15,8 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink className='navbar-link' to='/resume'>
-            Resume
+          <NavLink className='navbar-link' to='/cv'>
+            CV
           </NavLink>
         </li>
         <li>

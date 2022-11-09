@@ -53,7 +53,7 @@ const Profile = () => {
         <div className='profile-redirect-cv'>
           <h4 className='profile-redirect-cv-text'>{checkCVText}</h4>
           <RightArrow />
-          <NavLink className='profile-redirect-cv-link' to='/resume'>
+          <NavLink className='profile-redirect-cv-link' to='/cv'>
             <IconCV />
           </NavLink>
         </div>

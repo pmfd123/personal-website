@@ -1,13 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
 import Contact from './components/modules/Contact';
 import Home from './components/modules/Home';
-import Resume from './components/modules/Resume';
+import CV from './components/modules/CV';
 
 const AppRouter = () => {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/resume' element={<Resume />} />
+      <Route path='/cv' element={<CV />} />
       <Route path='/contact' element={<Contact />} />
     </Routes>
   );

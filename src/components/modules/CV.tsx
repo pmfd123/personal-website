@@ -28,19 +28,15 @@ const DownloadIcon = () => (
   </svg>
 );
 
-const Resume = () => {
+const CV = () => {
   const imageCV = require('../../assets/CV.jpg');
   return (
-    <div className='resume'>
-      <div className='resume-container'>
-        <div className='resume-headline'>
-          <h2 className='resume-title'>My Resume</h2>
-          <a
-            className='resume-download'
-            href={getTextResource('urlCV')}
-            download
-          >
-            <h5 className='resume-download-text'>Download</h5>
+    <div className='cv'>
+      <div className='cv-container'>
+        <div className='cv-headline'>
+          <h2 className='cv-title'>My CV</h2>
+          <a className='cv-download' href={getTextResource('urlCV')} download>
+            <h5 className='cv-download-text'>Download</h5>
             <DownloadIcon />
           </a>
         </div>
@@ -50,4 +46,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default CV;

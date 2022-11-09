@@ -26,7 +26,14 @@ const SkillsCard: React.FC<SkillsCardProps> = ({ title }) => {
       <h3 className='skills-card-title'>{title}</h3>
       <div className='skills-card-container'>
         {skills.map((imgSrc, index) => {
-          return <img className='skills-image' src={imgSrc} key={index} />;
+          return (
+            <img
+              className='skills-image'
+              src={imgSrc}
+              key={index}
+              alt='skill'
+            />
+          );
         })}
       </div>
     </div>
